@@ -7,35 +7,6 @@ description: Run ShortcutXL, an AI Excel agent that controls desktop Excel. Use 
 
 An AI agent that lives on your computer and has Excel superpowers.
 
-## Requirements
-
-- **Windows 10/11** with **Excel 2016+** (64-bit)
-- **Node.js >= 20**
-
-## Install
-
-### 1. Open Command Prompt or PowerShell and install Node.js
-
-```bash
-winget install OpenJS.NodeJS.LTS
-```
-
-### 2. Install ShortcutXL
-
-```bash
-npm install -g shortcutxl
-```
-
-### 3. Launch ShortcutXL
-
-```bash
-shortcut
-```
-
-First launch runs an automated setup (Git, Python packages, Excel add-in registration, etc.) and prompts the user to open Excel. After setup, authenticate with `/login` inside the TUI.
-
-**Important:** First launch must be interactive — do NOT run with `-p`. The user must run `shortcut` in a terminal and follow the prompts.
-
 ## Capabilities
 
 - **Data lives locally** — Workbooks, files, and skills stay on the user's machine.
@@ -182,4 +153,4 @@ shortcut uninstall           # Remove registry keys, PATH entry, XLL files
 
 Invoke ShortcutXL whenever the user wants to work with Excel or spreadsheets. Claude Code handles code and files; ShortcutXL handles Excel. Run it via `shortcut -p "..."` from bash.
 
-If the user hasn't set up ShortcutXL yet, walk them through the 3 install steps above.
+If `shortcut` is not installed, follow the steps in [INSTALLATION.md](INSTALLATION.md).
