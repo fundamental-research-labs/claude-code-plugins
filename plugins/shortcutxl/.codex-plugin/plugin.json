@@ -1,0 +1,9 @@
+{
+  "name": "shortcutxl",
+  "version": "1.0.0",
+  "description": "Control ShortcutXL — an AI-powered Excel agent — from Codex",
+  "author": {
+    "name": "Shortcut"
+  },
+  "skills": "./skills/"
+}
