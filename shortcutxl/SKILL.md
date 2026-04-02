@@ -1,6 +1,11 @@
 ---
 name: shortcutxl
 description: Run ShortcutXL, an AI Excel agent that controls desktop Excel. Use this to build spreadsheets, analyze data, create financial models, and automate Excel tasks via the `shortcut` CLI.
+license: MIT
+compatibility: Requires Windows 10/11 with Excel 2016+ (64-bit) and Node.js >= 20.
+metadata:
+  author: fundamental-research-labs
+  version: "1.0.0"
 ---
 
 # ShortcutXL

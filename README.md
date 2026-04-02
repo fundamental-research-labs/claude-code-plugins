@@ -1,27 +1,26 @@
-# ShortcutXL Plugins
+# ShortcutXL Skill
 
-Control [ShortcutXL](https://shortcut.ai) — an AI-powered Excel agent — from Claude Code or Codex.
+Control [ShortcutXL](https://shortcut.ai) — an AI-powered Excel agent — from Codex or Claude Code.
 
-## Install
+## Install (Codex)
 
-### Claude Code
-
-```
-/plugin install shortcutxl
-```
-
-### Codex
+Inside a Codex session:
 
 ```
-$plugin-installer shortcutxl
+$skill-installer install https://github.com/fundamental-research-labs/shortcutxl-plugins/tree/master/shortcutxl
 ```
 
-## Supported Agents
+Then restart Codex.
 
-- **Claude Code** — via `.claude-plugin/`
-- **Codex** — via `.codex-plugin/`
+## Install (Claude Code)
 
-Both use the same SKILL.md skill definitions.
+```
+/skill install https://github.com/fundamental-research-labs/shortcutxl-plugins/tree/master/shortcutxl
+```
+
+## Manual install
+
+Copy the `shortcutxl/` directory to `~/.agents/skills/shortcutxl/` and restart your agent.
 
 ## Sync
 
@@ -29,6 +28,5 @@ Source of truth is `shortcutXL/shortcutxl-plugins/` in the monorepo. To sync to 
 
 ```bash
 cd shortcutXL/shortcutxl-plugins
-rsync -av --exclude='.git' --exclude='README.md' ./ /Users/pwang/Desktop/WORK/shortcutxl-plugins/
-cd /Users/pwang/Desktop/WORK/shortcutxl-plugins && git add -A && git commit -m "Sync from monorepo" && git push
+cp -r shortcutxl README.md /path/to/shortcutxl-plugins/
 ```
