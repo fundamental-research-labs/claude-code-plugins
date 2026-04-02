@@ -1,4 +1,4 @@
-# ShortcutXL Plugin
+# ShortcutXL Plugins
 
 Control [ShortcutXL](https://shortcut.ai) — an AI-powered Excel agent — from Claude Code or Codex.
 
@@ -25,10 +25,10 @@ Both use the same SKILL.md skill definitions.
 
 ## Sync
 
-Source of truth is `shortcutXL/claude-code-plugin/` in the monorepo. To sync to the published repo:
+Source of truth is `shortcutXL/shortcutxl-plugins/` in the monorepo. To sync to the published repo:
 
 ```bash
-cd shortcutXL/claude-code-plugin
-rsync -av --exclude='.git' --exclude='README.md' ./ /path/to/shortcutxl-plugin/
-cd /path/to/shortcutxl-plugin && git add -A && git commit -m "Sync from monorepo" && git push
+cd shortcutXL/shortcutxl-plugins
+rsync -av --exclude='.git' --exclude='README.md' ./ /Users/pwang/Desktop/WORK/shortcutxl-plugins/
+cd /Users/pwang/Desktop/WORK/shortcutxl-plugins && git add -A && git commit -m "Sync from monorepo" && git push
 ```
